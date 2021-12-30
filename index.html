@@ -6,21 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recover Emergency Wallet With A Trezor</title>
 <style>
+
+html {scroll-behavior: smooth;}
+
     body {
 background-color: #f6f6f6;
 }
 
 navbar{
 position: fixed;
-top: 0;
-left: 0;
-padding: 30px;
+top: 0px;
+left: 0px;
+padding: 75px 0px;
+min-width: 300px;
 width: 300px;
-height: 100vh;
+height: 100%;
+color: black;
 background-color: white;
 }
 
-    
+.nav-links {
+font-size: 20px;
+display:  flex;
+flex-direction: column;
+}
+
+.link {
+text-decoration: none;
+color: black;
+border-bottom: 1px solid gray;
+padding: 10px;
+}
+.link:hover{
+background-color: #eee;
+font-weight: 700;
+transition: background-color 0.0s ease-in-out;
+}
+
+.main-doc{
+margin-left: 400px;
+margin-right: 20px;
+}
+@media(max-width: 1200px){
+#navbar{
+width: 150px;
+}
+
+h1{
+font-size=23px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-doc{
+        margin-left: 250px; 
+}
+
+.main-section {
+margn: 50px 0px;
+}
+
+code {
+display: block;
+text-align: left;
+white-space: pre;
+position: relative;
+background-color: white;
+line-height: 3;
+border-radius: 10px;
+padding: 10px;
+}
+
+p {
+line-height: 1.5rem;
+}
+
 </style>
    
 
@@ -30,12 +89,12 @@ background-color: white;
         <header class="navbar-header">
             <h1>Recover Emergency Wallet With A Trezor</h1>
         </header>
-        <div class="nav-links">
-            <a href="#Introduction" class="link">Introduction</a>
-            <a href="#Seed" class="link">Seed</a>
-            <a href="#Scrambled" class="link">Scrambled</a>
-            <a href="#Input" class="link">Input</a>
-            <a href="#Finish" class="link">Finish</a>
+        <div class="link">
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Seed" class="nav-link">Seed</a>
+            <a href="#Scrambled" class="nav-link">Scrambled</a>
+            <a href="#Input" class="nav-link">Input</a>
+            <a href="#Finish" class="nav-link">Finish</a>
         </div>
     </nav>
 
@@ -111,6 +170,13 @@ background-color: white;
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sequi perspiciatis, fugit, ipsa amet possimus repellat ex voluptatum cumque odio eos placeat! Adipisci.
     </p>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+      </ul>
     <pre><code>
         print("Finish!")
     </code></pre>
